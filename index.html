@@ -3,7 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Own Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>CSS Selectors and Specificity Cheat Sheet</h1>
+
+    <h2>Basic Selectors</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Class Selector</td>
+          <td><code>.class-name</code></td>
+          <td>Selects all elements with the specified class.</td>
+        </tr>
+        <tr>
+          <td>ID Selector</td>
+          <td><code>#id-name</code></td>
+          <td>Selects the element with the specified ID.</td>
+        </tr>
+        <tr>
+          <td>Element Selector</td>
+          <td><code>element</code></td>
+          <td>Selects all elements of the specified type.</td>
+        </tr>
+        <tr>
+          <td>Attribute Selector</td>
+          <td><code>[attribute=value]</code></td>
+          <td>Selects elements with the specified attribute and value.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Combinator Selectors</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Descendant Selector</td>
+          <td><code>ancestor descendant</code></td>
+          <td>Selects all descendants of the specified ancestor.</td>
+        </tr>
+        <tr>
+          <td>Child Selector</td>
+          <td><code>parent > child</code></td>
+          <td>Selects all direct children of the specified parent.</td>
+        </tr>
+        <tr>
+          <td>Adjacent Sibling Selector</td>
+          <td><code>previous + next</code></td>
+          <td>
+            Selects the next sibling immediately following the specified
+            element.
+          </td>
+        </tr>
+        <tr>
+          <td>General Sibling Selector</td>
+          <td><code>element ~ siblings</code></td>
+          <td>Selects all siblings following the specified element.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Pseudo-class Selectors</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>:hover</td>
+          <td><code>element:hover</code></td>
+          <td>Selects elements when the user hovers over them.</td>
+        </tr>
+        <tr>
+          <td>:first-child</td>
+          <td><code>element:first-child</code></td>
+          <td>Selects the first child of the specified element.</td>
+        </tr>
+        <tr>
+          <td>:nth-child(n)</td>
+          <td><code>element:nth-child(n)</code></td>
+          <td>Selects the nth child of the specified element.</td>
+        </tr>
+        <tr>
+          <td>:not(selector)</td>
+          <td><code>:not(selector)</code></td>
+          <td>Selects elements that do not match the specified selector.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
